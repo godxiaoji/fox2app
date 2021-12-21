@@ -1,0 +1,6 @@
+<div id="app">
+  <button @click="back">返回</button>
+  <button @click="reLaunch">reLaunch</button>
+  <p>info</p>
+  <world></world>
+</div>

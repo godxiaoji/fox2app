@@ -1,0 +1,1 @@
+<p @click="test">{{title }} <world></world> {{number + 2}}</p>

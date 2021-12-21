@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "world": "/components/hello/world"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#ff0000",
+  "navigationBarTitleText": "详情页"
+}

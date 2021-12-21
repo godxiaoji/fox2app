@@ -1,0 +1,21 @@
+<div id="app" @touchstart="onWheel">
+  <h1 id="number" @click="add">{{number}}</h1>
+  <!-- <p @click="showPlus">{{plus}} + {{info.num}}</p>
+  <hello class="a" :number="number" :info="info" ref="hello"></hello>
+  <ul>
+    <li v-for="(item, index) in arr" :key="index">{{item}}</li>
+  </ul>
+  <ul>
+    <li v-for="(item, index) in arr2" :key="index">{{item}}</li>
+  </ul>
+  <input type="checkbox" v-model="ck" />
+  <select v-model="selected">
+    <option v-for="option in options" v-bind:value="option.value">
+      {{ option.text }}
+    </option>
+  </select>
+  <span>Selected: {{ selected }}</span> -->
+  <fx-input type="text" v-model.number="number"/>
+  <button @mousedown="toAbout">关于我们</button>
+  <fx-button @click="onClick">自定义按钮</fx-button>
+</div>

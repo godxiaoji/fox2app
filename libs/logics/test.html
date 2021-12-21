@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="test.js"></script>
+  </head>
+  <body>
+    <script type="module">
+      import { createComponent } from './test.js'
+
+      window.ttt = createComponent(
+        {
+          data() {
+            return {
+              num: 1,
+              obj: {},
+              arr: []
+            }
+          },
+          computed: {
+            plus() {
+              return this.num + 1
+            }
+          },
+          created() {
+            console.log(this)
+          }
+        },
+        {
+          cid: 1,
+          pid: 1,
+          route: 'pages/index/index'
+        }
+      )
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "build:frame": "webpack --mode=production --config=./webpack/frame.config.js",
+    "build:app": "webpack --mode=production --config=./webpack.app.config.js",
+    "watch": "webpack --watch",
+    "lint": "eslint . --fix",
+    "serve": "webpack-dev-server --config=./webpack.dev.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.7.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "file-loader": "^6.0.0",
+    "fs-extra": "^9.0.1",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "url-loader": "^4.1.0",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "mslide": "^1.0.2"
+  }
+}

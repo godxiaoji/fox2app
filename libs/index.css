@@ -1,0 +1,173 @@
+html {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+
+.navigation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 44px;
+  z-index: 100;
+  background: rgba(237, 237, 237, 0.9);
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.mode--dark .navigation {
+  background: rgba(17, 17, 17, 1);
+  color: #fff;
+}
+
+.navigation .left {
+  height: 32px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(151, 151, 151, 0.2);
+  box-sizing: border-box;
+  align-items: center;
+  display: none;
+}
+
+.navigation .center {
+  font-size: 17px;
+  margin: 0 0 0 10px;
+  font-weight: normal;
+}
+
+.navigation .right {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(151, 151, 151, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.mode--dark .navigation .left,
+.mode--dark .navigation .right {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.navigation .button {
+  width: 40px;
+  height: 100%;
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: content-box;
+  outline: 0;
+  cursor: pointer;
+}
+
+.navigation .left .button {
+  display: none;
+}
+
+.navigation .button::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 18px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: -9px;
+}
+
+.mode--dark .navigation button::after {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.navigation .button:last-child::after {
+  content: none;
+}
+
+.navigation .button svg {
+  fill: #000;
+}
+
+.mode--dark .navigation button svg {
+  fill: #fff;
+}
+
+.navigation .left.home {
+  display: flex;
+}
+
+.navigation .left.home .home-button {
+  display: flex;
+}
+
+.navigation .left.back {
+  display: flex;
+}
+
+.navigation .left.back .back-button {
+  display: flex;
+}
+
+.navigation .left.back .back-button::after {
+  content: none;
+}
+
+.navigation .left.home.back {
+  display: flex;
+}
+
+.navigation .left.home.back .button {
+  display: flex;
+}
+
+.navigation .left.home.back .back-button::after {
+  content: '';
+}
+
+.frames {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 44px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.logic-frame {
+  display: none;
+}
